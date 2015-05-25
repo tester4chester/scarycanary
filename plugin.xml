@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-        id="com.modaltech.cordova.plugin.canvascamera"
+        id="za.co.deepblue.cordova.plugin.scarycanary"
         version="1.0">
 
     <name>CanvasCamera</name>
 
-    <description>The purpose of the plugin is to create an platform independent javascript interface for Cordova based mobile applications to preview camera and to take picture.</description>
-    <repo>https://github.com/donaldp24/CanvasCameraPlugin.git</repo>
+    <description>Scary camera changes for Android</description>
+    <repo>https://github.com/tester4chester/scarycanary.git</repo>
     <keywords>camera, canvas camera, take photos</keywords>
     <license>Apache 2.0</license>
 
-    <author>Matias Narigueta Arau (FROM CHILE)</author>
+    <author>Tester4Chester</author>
 
     <engines>
         <engine name="cordova" version=">=3.0.0" />
