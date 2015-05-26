@@ -16,11 +16,11 @@
                     android:id="@+id/surfaceView"/>
         </RelativeLayout>
     </LinearLayout>
-<!--
+
     <LinearLayout
             android:orientation="horizontal"
             android:layout_width="fill_parent"
-            android:layout_height="0dp" android:layout_gravity="center" android:layout_weight="0.7"
+            android:layout_height="0dp" android:layout_gravity="center" android:layout_weight="22"
             android:id="@+id/statusView" android:paddingTop="20dp"
             android:paddingBottom="20dp">
         <LinearLayout
@@ -50,9 +50,8 @@
         <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="fill_parent"
                       android:layout_weight="1" android:id="@+id/linearLayout"/>
     </LinearLayout>	
-	-->
     <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0dp"
-                  android:layout_gravity="center" android:id="@+id/controlView" android:layout_weight="44"
+                  android:layout_gravity="center" android:id="@+id/controlView" android:layout_weight="22"
                   android:paddingTop="30dp" android:paddingBottom="30dp">
         <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="fill_parent"
                       android:layout_weight="1" android:id="@+id/linearLayout1"/>
