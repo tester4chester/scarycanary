@@ -5,17 +5,10 @@
               android:layout_height="fill_parent"
               android:id="@+id/linearRoot">
 
-	<ScrollView 
-                     android:id="@+id/scrollView"
-                     android:layout_width="fill_parent"
-                     android:layout_height="320dip"
-					 android:layout_weight="50"
-                     android:scrollbars="none"
-                     android:fillViewport="true">
 
 	
 		<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0dp"
-					  android:layout_gravity="center" android:id="@+id/videoView" android:layout_weight="4"
+					  android:layout_gravity="center" android:id="@+id/videoView" android:layout_weight="50"
 					  android:background="@color/background">
 			<RelativeLayout
 					android:layout_width="fill_parent"
@@ -26,8 +19,8 @@
 						android:id="@+id/surfaceView"/>
 			</RelativeLayout>
 		</LinearLayout>
-	</ScrollView>					 
-    <LinearLayout
+
+	<LinearLayout
             android:orientation="horizontal"
             android:layout_width="fill_parent"
             android:layout_height="0dp" android:layout_gravity="center" android:layout_weight="25"
