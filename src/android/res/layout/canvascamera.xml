@@ -40,7 +40,7 @@
         <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="WO# 1234567890"
+                android:text=""
                 android:id="@+id/textView" android:layout_weight="9" android:textColor="@color/white"
                 android:layout_gravity="center"/>
         <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="fill_parent"
