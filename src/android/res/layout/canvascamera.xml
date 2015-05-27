@@ -22,7 +22,7 @@
 		<LinearLayout
 				android:orientation="horizontal"
 				android:layout_width="fill_parent"
-				android:layout_height="0dp" android:layout_gravity="bottom" android:layout_weight="25"
+				android:layout_height="wrap_content" android:layout_gravity="bottom" android:layout_weight="25"
 				android:id="@+id/statusView" android:paddingTop="20dp"
 				android:paddingBottom="20dp">
 			<LinearLayout
@@ -52,7 +52,7 @@
 			<LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="fill_parent"
 						  android:layout_weight="1" android:id="@+id/linearLayout"/>
 		</LinearLayout>	
-		<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0dp"
+		<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
 					  android:layout_gravity="bottom" android:id="@+id/controlView" android:layout_weight="25"
 					  android:paddingTop="30dp" android:paddingBottom="30dp">
 			<LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="fill_parent"
