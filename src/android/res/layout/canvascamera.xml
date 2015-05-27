@@ -3,7 +3,8 @@
               android:orientation="vertical"
               android:layout_width="fill_parent"
               android:layout_height="fill_parent"
-              android:id="@+id/linearRoot">
+              android:id="@+id/linearRoot"
+			  android:baselineAligned="false">
     <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
                   android:layout_gravity="center" android:id="@+id/videoView" android:layout_weight="1"
                   android:background="@color/background">
@@ -17,20 +18,11 @@
         </RelativeLayout>
     </LinearLayout>
 
-	<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
-			  android:layout_gravity="center" android:id="@+id/overlayView" android:layout_weight="1"
-			  android:background="@color/background">
 
 		<LinearLayout
 				android:orientation="horizontal"
 				android:layout_width="fill_parent"
-				android:layout_height="0dp" android:layout_gravity="center" android:layout_weight="50"
-				android:id="@+id/overlayTop" >
-		</LinearLayout>
-		<LinearLayout
-				android:orientation="horizontal"
-				android:layout_width="fill_parent"
-				android:layout_height="0dp" android:layout_gravity="center" android:layout_weight="25"
+				android:layout_height="0dp" android:layout_gravity="bottom" android:layout_weight="25"
 				android:id="@+id/statusView" android:paddingTop="20dp"
 				android:paddingBottom="20dp">
 			<LinearLayout
@@ -61,7 +53,7 @@
 						  android:layout_weight="1" android:id="@+id/linearLayout"/>
 		</LinearLayout>	
 		<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0dp"
-					  android:layout_gravity="center" android:id="@+id/controlView" android:layout_weight="25"
+					  android:layout_gravity="bottom" android:id="@+id/controlView" android:layout_weight="25"
 					  android:paddingTop="30dp" android:paddingBottom="30dp">
 			<LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="fill_parent"
 						  android:layout_weight="1" android:id="@+id/linearLayout1"/>
@@ -78,6 +70,5 @@
 			<LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="fill_parent"
 						  android:layout_weight="1" android:id="@+id/linearLayout2"/>
 		</LinearLayout>
-	</LinearLayout>
 </FrameLayout>
 
