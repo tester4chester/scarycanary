@@ -1,13 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:orientation="vertical"
               android:layout_width="fill_parent"
               android:layout_height="fill_parent"
               android:id="@+id/linearRoot">
-    <LinearLayout
+
+
+	
+		<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0dp"
+					  android:layout_gravity="center" android:id="@+id/videoView" android:layout_weight="50"
+					  android:background="@color/background">
+			<RelativeLayout
+					android:layout_width="fill_parent"
+					android:layout_height="fill_parent" android:layout_gravity="center">
+				<SurfaceView
+						android:layout_width="fill_parent"
+						android:layout_height="fill_parent"
+						android:id="@+id/surfaceView"/>
+			</RelativeLayout>
+		</LinearLayout>
+
+	<LinearLayout
             android:orientation="horizontal"
             android:layout_width="fill_parent"
-            android:layout_height="0dp" android:layout_gravity="center" android:layout_weight="0.7"
+            android:layout_height="0dp" android:layout_gravity="center" android:layout_weight="25"
             android:id="@+id/statusView" android:paddingTop="20dp"
             android:paddingBottom="20dp">
         <LinearLayout
@@ -15,10 +31,7 @@
                 android:layout_width="0dp"
                 android:layout_height="fill_parent" android:layout_weight="1">
         </LinearLayout>
-        <ImageView
-                android:layout_width="0dp"
-                android:layout_height="fill_parent"
-                android:id="@+id/imgFlash" android:src="@drawable/video_sprites_focus" android:layout_weight="3"/>
+
         <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="fill_parent"
                       android:layout_weight="1" android:id="@+id/linearLayout3"/>
         <TextView
@@ -37,25 +50,19 @@
         <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="fill_parent"
                       android:layout_weight="1" android:id="@+id/linearLayout"/>
     </LinearLayout>
-    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0dp"
-                  android:layout_gravity="center" android:id="@+id/videoView" android:layout_weight="4"
-                  android:background="@color/background">
-        <RelativeLayout
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent">
-            <SurfaceView
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
-                    android:id="@+id/surfaceView"/>
-        </RelativeLayout>
-    </LinearLayout>
     <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0dp"
-                  android:layout_gravity="center" android:id="@+id/controlView" android:layout_weight="1"
+                  android:layout_gravity="center" android:id="@+id/controlView" android:layout_weight="25"
                   android:paddingTop="30dp" android:paddingBottom="30dp">
         <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="fill_parent"
                       android:layout_weight="1" android:id="@+id/linearLayout1"/>
+        <ImageView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:id="@+id/imgFlash" android:src="@drawable/video_sprites_focus" android:layout_weight="4"/>					  
+				
         <ImageView android:layout_width="0dp" android:layout_height="fill_parent" android:id="@+id/imgRevert"
-                   android:src="@drawable/video_sprites_revert" android:layout_weight="3"/>
+                   android:src="@drawable/video_sprites_revert" android:layout_weight="0"/>
+				   
         <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="fill_parent"
                       android:layout_weight="1" android:id="@+id/linearLayout5"/>
         <ImageView android:layout_width="0dp" android:layout_height="fill_parent" android:id="@+id/imgCapture"
@@ -67,5 +74,5 @@
         <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="fill_parent"
                       android:layout_weight="1" android:id="@+id/linearLayout2"/>
     </LinearLayout>
-</LinearLayout>
+</FrameLayout>
 
