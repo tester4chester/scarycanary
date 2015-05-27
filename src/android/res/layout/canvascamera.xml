@@ -4,6 +4,20 @@
               android:layout_width="fill_parent"
               android:layout_height="fill_parent"
               android:id="@+id/linearRoot">
+
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0dp"
+                  android:layout_gravity="center" android:id="@+id/videoView" android:layout_weight="4"
+                  android:background="@color/background">
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+            <SurfaceView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/surfaceView"/>
+        </RelativeLayout>
+    </LinearLayout>
+
     <LinearLayout
             android:orientation="horizontal"
             android:layout_width="fill_parent"
@@ -37,18 +51,7 @@
         <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="fill_parent"
                       android:layout_weight="1" android:id="@+id/linearLayout"/>
     </LinearLayout>
-    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0dp"
-                  android:layout_gravity="center" android:id="@+id/videoView" android:layout_weight="4"
-                  android:background="@color/background">
-        <RelativeLayout
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent">
-            <SurfaceView
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
-                    android:id="@+id/surfaceView"/>
-        </RelativeLayout>
-    </LinearLayout>
+	
     <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0dp"
                   android:layout_gravity="center" android:id="@+id/controlView" android:layout_weight="1"
                   android:paddingTop="30dp" android:paddingBottom="30dp">
