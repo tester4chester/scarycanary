@@ -23,7 +23,7 @@
             android:layout_width="fill_parent"
             android:layout_height="0dp" android:layout_gravity="center"
             android:id="@+id/statusView" android:paddingTop="20dp"
-            android:paddingBottom="20dp" >
+            android:paddingBottom="20dp" android:layout_weight="0.5">
         <LinearLayout
                 android:orientation="vertical"
                 android:layout_width="0dp"
@@ -36,7 +36,7 @@
         <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="Version 1.0.21"
+                android:text="Version 1.0.22"
                 android:id="@+id/textView" android:layout_weight="9" android:textColor="@color/white"
                 android:layout_gravity="center"/>
         <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="fill_parent"
@@ -51,22 +51,22 @@
     </LinearLayout>
 	
     <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0dp"
-                  android:layout_gravity="center" android:id="@+id/controlView" android:layout_weight="1"
+                  android:layout_gravity="center" android:id="@+id/controlView" android:layout_weight="0.5"
                   android:paddingTop="30dp" android:paddingBottom="30dp">
         <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="fill_parent"
                       android:layout_weight="1" android:id="@+id/linearLayout1"/>
         <ImageView
                 android:layout_width="0dp"
-                android:layout_height="wrap-content"
+                android:layout_height="wrap_content"
                 android:id="@+id/imgFlash" android:src="@drawable/video_sprites_focus" android:layout_weight="3"/>
 
         <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="fill_parent"
                       android:layout_weight="1" android:id="@+id/linearLayout5"/>
-        <ImageView android:layout_width="0dp" android:layout_height="wrap-content" android:id="@+id/imgCapture"
+        <ImageView android:layout_width="0dp" android:layout_height="wrap_content" android:id="@+id/imgCapture"
                    android:src="@drawable/camera_sprite" android:layout_weight="3"/>
         <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="fill_parent"
                       android:layout_weight="1" android:id="@+id/linearLayout6"/>
-        <ImageView android:layout_width="0dp" android:layout_height="wrap-content" android:id="@+id/imgClose"
+        <ImageView android:layout_width="0dp" android:layout_height="wrap_content" android:id="@+id/imgClose"
                    android:src="@drawable/video_sprites_close" android:layout_weight="3"/>
         <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="fill_parent"
                       android:layout_weight="1" android:id="@+id/linearLayout2"/>

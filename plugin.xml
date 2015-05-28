@@ -2,7 +2,7 @@
 
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
         id="za.co.deepblue.cordova.plugin.scarycanary"
-        version="1.0.21">
+        version="1.0.23">
 
     <name>CanvasCamera</name>
 
@@ -71,8 +71,8 @@
 			<uses-feature android:name="android.hardware.camera.setParameters" />			
         </config-file>
 
-        <source-file src="src/android/CanvasCamera.java" target-dir="src/com/keith/canvascameraplugin" />
-        <source-file src="src/android/CanvasCameraView.java" target-dir="src/com/keith/canvascameraplugin" />
+        <source-file src="src/android/CanvasCamera.java" target-dir="src/android/canvascameraplugin" />
+        <source-file src="src/android/CanvasCameraView.java" target-dir="src/android/canvascameraplugin" />
         
         
 		<source-file src="src/android/res/drawable-hdpi/camera_sprite.png" target-dir="res/drawable-hdpi"/>
