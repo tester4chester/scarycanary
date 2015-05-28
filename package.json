@@ -1,5 +1,5 @@
 {
-    "version": "1.0.52",
+    "version": "1.0.55",
     "name": "za.co.deepblue.cordova.plugin.scarycanary",
     "cordova_name": "CanvasCamera",
     "description": "Scary camera changes for Android",
