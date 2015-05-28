@@ -4,12 +4,14 @@
               android:layout_width="fill_parent"
               android:layout_height="fill_parent"
               android:id="@+id/linearRoot">
+			  
     <LinearLayout
             android:orientation="horizontal"
             android:layout_width="fill_parent"
             android:layout_height="0dp" android:layout_gravity="center" android:layout_weight="0.7"
             android:id="@+id/statusView" android:paddingTop="20dp"
-            android:paddingBottom="20dp">
+            android:paddingBottom="20dp"
+			 android:visibility="gone">
         <LinearLayout
                 android:orientation="vertical"
                 android:layout_width="0dp"
@@ -37,21 +39,41 @@
         <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="fill_parent"
                       android:layout_weight="1" android:id="@+id/linearLayout"/>
     </LinearLayout>
+	
     <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0dp"
                   android:layout_gravity="center" android:id="@+id/videoView" android:layout_weight="4"
-                  android:background="@color/background">
+                  android:background="@color/background"
+				   >
         <RelativeLayout
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent">
-            <SurfaceView
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
-                    android:id="@+id/surfaceView"/>
+				<ScrollView 
+                     android:id="@+id/scrollView"
+                     android:layout_width="fill_parent"
+                     android:layout_height="282dp"
+                     android:scrollbars="none"
+                     android:fillViewport="true">
+
+                        <LinearLayout
+                                android:id="@+id/linearLayoutBeautyContent"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:orientation="vertical">
+
+							<SurfaceView
+									android:layout_width="fill_parent"
+									android:layout_height="fill_parent"
+									android:id="@+id/surfaceView"/>
+					
+                      </LinearLayout>
+				</ScrollView>
+
         </RelativeLayout>
     </LinearLayout>
     <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0dp"
                   android:layout_gravity="center" android:id="@+id/controlView" android:layout_weight="1"
-                  android:paddingTop="30dp" android:paddingBottom="30dp">
+                  android:paddingTop="30dp" android:paddingBottom="30dp"
+				   android:visibility="gone">
         <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="fill_parent"
                       android:layout_weight="1" android:id="@+id/linearLayout1"/>
         <ImageView android:layout_width="0dp" android:layout_height="fill_parent" android:id="@+id/imgRevert"
