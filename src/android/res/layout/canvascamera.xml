@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:orientation="vertical"
               android:layout_width="fill_parent"
               android:layout_height="fill_parent"
@@ -40,38 +40,19 @@
                       android:layout_weight="1" android:id="@+id/linearLayout"/>
     </LinearLayout>
 	
-    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0dp"
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
                   android:layout_gravity="center" android:id="@+id/videoView" android:layout_weight="4"
                   android:background="@color/background"
 				   >
-        <RelativeLayout
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent">
-				<ScrollView 
-                     android:id="@+id/scrollView"
-                     android:layout_width="fill_parent"
-                     android:layout_height="fill_parent"
-                     android:scrollbars="none"
-                     android:fillViewport="true">
+		<SurfaceView
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:id="@+id/surfaceView"
+				android:layout_weight="1"/>
 
-                        <LinearLayout
-                                android:id="@+id/linearLayoutBeautyContent"
-                                android:layout_width="288dp"
-                                android:layout_height="352dp"
-                                android:orientation="vertical">
-
-							<SurfaceView
-									android:layout_width="fill_parent"
-									android:layout_height="fill_parent"
-									android:id="@+id/surfaceView"
-									android:layout_weight="1"/>
-					
-                      </LinearLayout>
-				</ScrollView>
-
-        </RelativeLayout>
     </LinearLayout>
-    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0dp"
+
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
                   android:layout_gravity="center" android:id="@+id/controlView" android:layout_weight="1"
                   android:paddingTop="30dp" android:paddingBottom="30dp"
 				  >
@@ -90,5 +71,5 @@
         <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="fill_parent"
                       android:layout_weight="1" android:id="@+id/linearLayout2"/>
     </LinearLayout>
-</LinearLayout>
+</RelativeLayout>
 
