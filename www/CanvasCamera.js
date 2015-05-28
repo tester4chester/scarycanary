@@ -6,12 +6,6 @@
 //
 //  MIT License
 
-function debugz(msg){
-	try{
-		document.getElementById("debug").innerHTML = msg;
-	}catch(e){}
-}
-
 cordova.define("cordova/plugin/CanvasCamera", function(require, exports, module) {
     var exec = require('cordova/exec');
     var CanvasCamera = function(){
@@ -73,7 +67,7 @@ cordova.define("cordova/plugin/CanvasCamera", function(require, exports, module)
     };
 
     CanvasCamera.prototype.start = function(options) {
-        cordova.exec(function(data){debugz("onsuccess");}, debugz("onfail");}, "CanvasCamera", "startCapture", [options]);
+        cordova.exec(function(){alert('yowzer');}, false, "CanvasCamera", "startCapture", [options]);
     };
 
 

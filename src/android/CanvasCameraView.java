@@ -1,4 +1,4 @@
-package za.co.deepblue.cordova.plugin.scarycanary;
+package com.keith.canvascameraplugin;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
