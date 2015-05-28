@@ -53,7 +53,7 @@
         <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
                       android:layout_weight="1" android:id="@+id/linearLayout5"/>
         <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/imgCapture"
-                   android:src="@drawable/camera_sprite" android:layout_weight="3"/>
+                   android:src="@drawable/camera" android:layout_weight="3"/>
         <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
                       android:layout_weight="1" android:id="@+id/linearLayout6"/>
         <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/imgClose"
