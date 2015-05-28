@@ -62,15 +62,16 @@ cordova.define("cordova/plugin/CanvasCamera", function(require, exports, module)
     };
 
 
-    CanvasCamera.prototype.start = function(options) {
-        cordova.exec(false, false, "CanvasCamera", "startCapture", [options]);
-    };
-
-
-
-    CanvasCamera.prototype.capture = function(data) {
+	CanvasCamera.prototype.capture = function(data) {
         this._camImage.src = data;
     };
+
+    CanvasCamera.prototype.start = function(options) {
+        cordova.exec(function(){alert('yowzer');}, false, "CanvasCamera", "startCapture", [options]);
+    };
+
+
+
 
     CanvasCamera.prototype.setFlashMode = function(flashMode) {
         cordova.exec(function(){}, function(){}, "CanvasCamera", "setFlashMode", [flashMode]);

@@ -6,7 +6,7 @@
               android:id="@+id/linearRoot">
 
     <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0dp"
-                  android:layout_gravity="center" android:id="@+id/videoView" android:layout_weight="1"
+                  android:layout_gravity="center" android:id="@+id/videoView" android:layout_weight="2"
                   android:background="@color/background">
         <RelativeLayout
                 android:layout_width="fill_parent"
@@ -23,7 +23,7 @@
             android:layout_width="fill_parent"
             android:layout_height="0dp" android:layout_gravity="center"
             android:id="@+id/statusView" android:paddingTop="20dp"
-            android:paddingBottom="20dp" android:layout_weight="0.5">
+            android:paddingBottom="20dp" android:layout_weight="1">
         <LinearLayout
                 android:orientation="vertical"
                 android:layout_width="0dp"
@@ -51,7 +51,7 @@
     </LinearLayout>
 	
     <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0dp"
-                  android:layout_gravity="center" android:id="@+id/controlView" android:layout_weight="0.5"
+                  android:layout_gravity="center" android:id="@+id/controlView" android:layout_weight="1"
                   android:paddingTop="30dp" android:paddingBottom="30dp">
         <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="fill_parent"
                       android:layout_weight="1" android:id="@+id/linearLayout1"/>
@@ -64,6 +64,7 @@
                       android:layout_weight="1" android:id="@+id/linearLayout5"/>
         <ImageView android:layout_width="0dp" android:layout_height="wrap_content" android:id="@+id/imgCapture"
                    android:src="@drawable/camera_sprite" android:layout_weight="3"/>
+				   
         <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="fill_parent"
                       android:layout_weight="1" android:id="@+id/linearLayout6"/>
         <ImageView android:layout_width="0dp" android:layout_height="wrap_content" android:id="@+id/imgClose"
