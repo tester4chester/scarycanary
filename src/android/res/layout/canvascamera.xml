@@ -19,13 +19,16 @@
     </LinearLayout>
 
     <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="100dp"
-                  android:layout_gravity="center" android:id="@+id/controlView" android:layout_weight="1"
+                  android:layout_gravity="bottom" android:id="@+id/controlView" android:layout_weight="1"
                   android:paddingTop="30dp" android:paddingBottom="30dp"
+				  android:background="#000000"
 				  >
         <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="fill_parent"
                       android:layout_weight="1" android:id="@+id/linearLayout1"/>
-        <ImageView android:layout_width="0dp" android:layout_height="fill_parent" android:id="@+id/imgRevert"
-                   android:src="@drawable/video_sprites_revert" android:layout_weight="3"/>
+        <ImageView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:id="@+id/imgFlash" android:src="@drawable/video_sprites_focus" android:layout_weight="3"/>
         <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="fill_parent"
                       android:layout_weight="1" android:id="@+id/linearLayout5"/>
         <ImageView android:layout_width="0dp" android:layout_height="fill_parent" android:id="@+id/imgCapture"
@@ -50,10 +53,8 @@
                 android:layout_width="0dp"
                 android:layout_height="fill_parent" android:layout_weight="1">
         </LinearLayout>
-        <ImageView
-                android:layout_width="0dp"
-                android:layout_height="fill_parent"
-                android:id="@+id/imgFlash" android:src="@drawable/video_sprites_focus" android:layout_weight="3"/>
+        <ImageView android:layout_width="0dp" android:layout_height="fill_parent" android:id="@+id/imgRevert"
+                   android:src="@drawable/video_sprites_revert" android:layout_weight="3"/>
         <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="fill_parent"
                       android:layout_weight="1" android:id="@+id/linearLayout3"/>
         <TextView
