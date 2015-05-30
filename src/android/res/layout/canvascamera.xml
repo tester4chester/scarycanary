@@ -18,11 +18,6 @@
 
     </LinearLayout>
 
-    <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent" 
-			 >
 	
 		<LinearLayout
 				android:orientation="horizontal"
@@ -30,6 +25,7 @@
 				android:layout_height="0dp" android:layout_gravity="center" android:layout_weight="1"
 				android:id="@+id/statusView" android:paddingTop="20dp"
 				android:paddingBottom="20dp"
+				android:visibility="gone"
 				 >
 			<LinearLayout
 					android:orientation="vertical"
@@ -59,14 +55,15 @@
 						  android:layout_weight="1" android:id="@+id/linearLayout"/>
 		</LinearLayout>
 
-		<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0dp"
+
+		<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="300dp"
 					  android:layout_gravity="bottom" android:id="@+id/controlView" android:layout_weight="1"
-					  android:paddingTop="30dp" android:paddingBottom="30dp"
+					  android:paddingTop="30dp" android:paddingBottom="30dp" android:background="@android:color/black"
 					  >
 			<LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="fill_parent"
 						  android:layout_weight="1" android:id="@+id/linearLayout1"/>
 			<ImageView android:layout_width="0dp" android:layout_height="fill_parent" android:id="@+id/imgRevert"
-					   android:src="@drawable/video_sprites_revert" android:layout_weight="3"/>
+					   android:src="@drawable/video_sprites_revert" android:layout_weight="3" />
 			<LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="fill_parent"
 						  android:layout_weight="1" android:id="@+id/linearLayout5"/>
 			<ImageView android:layout_width="0dp" android:layout_height="fill_parent" android:id="@+id/imgCapture"
@@ -77,8 +74,6 @@
 					   android:src="@drawable/video_sprites_close" android:layout_weight="3"/>
 			<LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="fill_parent"
 						  android:layout_weight="1" android:id="@+id/linearLayout2"/>
-		</LinearLayout>
-	</LinearLayout>
-	
+		</LinearLayout>	
 </FrameLayout>
 
